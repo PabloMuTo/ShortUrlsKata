@@ -50,11 +50,24 @@ docker exec -it shorturlskata_app_1 composer install
 docker exec -it shorturlskata_app_1 php artisan serve
 ```
 
+
+## Ejecutar e iniciar proyecto
+
+Vía postman, iniciar un request GET a la URL siguiente:
+
+```
+http://localhost:8787/api/v1/short-urls
+
+Body: url: string, required
+Header: Authorization Bearer ()[] 
+```
+
 ## Ejecutar tests
 
 ```
 docker exec -it shorturlskata_app_1 ./vendor/bin/phpunit tests --color
 ```
+
 
 ## Otros
 
